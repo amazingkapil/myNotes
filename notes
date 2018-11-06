@@ -1,0 +1,128 @@
+Groovy
+Build.gradle  == pom.xml
+Multi module project hai too multiple build.gradle hinge
+./gradlew clean build   command to run the gradle build
+
+Gradle had two things projects and task
+
+We can configure our Gradle build by using the following configuration files:
+* 		The Gradle build script (build.gradle) specifies a project and its tasks.
+* 		The Gradle properties file (gradle.properties) is used to configure the properties of the build.
+* 		The Gradle Settings file (settings.gradle) is optional in a build which has only one project. If our Gradle build has more than one projects, it is mandatory because it describes which projects participate to our build. Every multi-project build must have a settings file in the root project of the project hierarchy.
+
+You run a Gradle build using the gradle command. The gradle command looks for a file called build.gradle in the current directory. [2] We call this build.gradle file a build script, although strictly speaking it is a build configuration script, as we will see later. The build script defines a project and its tasks.
+
+
+All output files of our build are created under the build directory. This directory contains the following subdirectories which are relevant to this blog post (there are other subdirectories too, but we will talk about them in the future):
+* 		The classes directory contains the compiled .class files.
+* 		The libs directory contains the jar or war files created by the build.
+
+Gradle build Karne kale baad humm We can now try to run our application by using the following command:
+java -jar first-java-project.jar
+
+We can configure the main class of the created jar file by using the attributes() method of the Manifestinterface. In other words, we can specify the attributes added to the manifest file by using a map which contains key-value pairs.
+Hamare build Mei  Karne ke baad build/lib  Mei saare files aa jayenge.
+
+repositories {
+    maven {
+        url 'http://maven.petrikainulainen.net/repo'
+    }
+}
+
+Testset plugin se test karr skate hit
+
+
+
+
+RabbitMq
+AMQP advance message queuing protocol
+
+Producer -> Exchange ->queue ->Consumer
+
+Exchange is connected to queue through binding and binding key
+
+Producer routing key se send karega details and exchange compares with the binding key.
+
+Fanout will broadcast the message
+Direct exchange binding key == routing key
+Topic exchange do partial matching of keys
+Name less (Default)exchange will match the routing key to name of the queue
+
+brew services start rabbitmq
+rabbitmq-server
+
+
+Redis
+Mysql
+Rabbitmq
+
+Redis is remote dictionary server
+Use hot hai in Publisher subscriber Mei
+in caching and session management
+
+
+Debugging
+
+Hset encryption_data iv “qO9QlPJo6+sNJPYG3SN/ww==”
+hgetall encryption_data
+1) "client_id"
+2) "dccd29fd-cf8e-449b-b8cb-babe3ce30820"
+3) "prefix"
+4) "Vuwew"
+5) "encryption_key"
+6) "8f40bb78-565e-41fa-a4cf-5e44654625b7"
+7) "active"
+8) "true"
+9) "pod"
+10) "VENDOR"
+11) "iv"
+12) "qO9QlPJo6+sNJPYG3SN/ww=="
+
+Consider modules to be the same as JavaScript libraries.
+A set of functions you want to include in your application.
+
+
+Module
+Custom as well built in
+Var http = require(‘http’)
+Humne baat ki kaki modules ki Url,fs 
+
+
+Expressjs
+
+Debugging, 
+
+
+Git fetch remote ki local branch bna
+ deli hia
+Git remote -v gives kitni remote hai hammer pass
+
+
+RMS Mei orderrouter and authenticationrouter and order helper
+
+
+Ctrl + comm+Shift +left or Right error selection Mei help karma hai
+
+Option + shift + upArrow help karega copy Karne Mei us line ko
+
+Command + d for going to next selection of the particular word
+
+
+/orders/v1/oldHistory/
+fetchOrderHistoryUnpaginated call hogs controller ki
+Restaurant our session key hai parameter jo chahiye
+
+Authorisation level check hogs pehle
+authorizationHelper.checkAuthorizationLevel
+authorizationHelper.fetchSessionInfoFromSlave
+
+Agar session mil gaya toh 
+fetchOrderHistoryFromOMSUnpaginated ye call hoga
+
+
+
+
+
+
+
+
